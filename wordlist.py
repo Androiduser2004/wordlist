@@ -64,6 +64,7 @@ def banner():
     print(banner)
     print("                                      Coded by AdMin")
 
+banner()
 print("This Tool is Made For Generating Wordlist Upon Your Target")
 print("1. Press Enter to continue")
 print('2. Readme')
