@@ -63,11 +63,18 @@ def banner():
     banner = pyfiglet.figlet_format("WORDLIST GENERATOR")
     print(banner)
     print("                                      Coded by AdMin")
-
+#Run with Keyword Function
+def keyword():
+    print("KEYWORDS WORDLISTS GENERATOR")
+    print("(use comma to seperate the keywords")
+    readeri=str(input("keywords>>"))
+    keywords = list(readeri.split(sep=","))
+    print(keywords)
+                    
 banner()
 print("This Tool is Made For Generating Wordlist Upon Your Target")
-print("1. Press Enter to continue")
-print('2. Readme')
+print("1. Run with collected Info")
+print('2. Run with keywords')
 
 choice=input(">>")
 if choice == '':
@@ -75,3 +82,5 @@ if choice == '':
     basicinfo()
     adinfo()
     keylists()
+else:
+    keyword()
