@@ -45,16 +45,20 @@ def adinfo():
         print(adinfo)
     os.system("clear")
 
-    #Collecting more keywords about the target
+#Collecting more keywords about the target
     print("ADDING MORE KEYWORDS ABOUT TARGETS")
     print("(use comma to seperate the keywords)")
     readeri=str(input("Keywords>>"))
     keywords = list(readeri.split(sep=','))
     print(keywords)
-    adinfo.append(keywords)
+    adinfo = adinfo + keywords
+    
+#Keylists
 def keylists():
     keylists = basicinfo + adinfo
     print(keylists)
+    
+# Banner
 def banner():
     banner = pyfiglet.figlet_format("WORDLIST GENERATOR")
     print(banner)
